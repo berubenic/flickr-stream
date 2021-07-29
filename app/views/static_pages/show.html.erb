@@ -1,0 +1,5 @@
+<%= form_with url: root_path, method: :get do |form| %>
+  <%= form.label :profile_id, "Profile ID:" %>
+  <%= form.text_field :profile_id %>
+  <%= form.submit "Find profile" %>
+<% end %>
