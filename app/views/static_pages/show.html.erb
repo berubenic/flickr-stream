@@ -1,7 +1,0 @@
-<br>
-<br>
-<% if @list.present? %>
-    <% @list.each do |photo| %>
-        <%= image_tag "https://live.staticflickr.com/#{photo["server"]}/#{photo["id"]}_#{photo["secret"]}_m.jpg" %> <br>
-    <% end %>
-<% end %>

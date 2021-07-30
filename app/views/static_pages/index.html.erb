@@ -4,6 +4,10 @@
   <%= form.submit "Find profile" %>
 <% end %>
 
+<% if flash[:errors] %>
+  <%= flash[:errors] %>
+<% end %>
+
 <br>
 <br>
 <% if @list.present? %>
