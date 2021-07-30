@@ -1,20 +1,36 @@
-<%= form_with url: root_path, method: :get do |form| %>
-  <%= form.label :profile_id, "Profile ID:" %>
-  <%= form.text_field :profile_id %>
-  <%= form.submit "Find profile" %>
-<% end %>
+<div class='columns'>
+  <div class='column is-one-fifth'></div>
+  <div class='column is-three-fifths'>
+    <div class='container'>
+      <%= form_with url: root_path, method: :get do |form| %>
+        <div class='field'>
+          <%= form.label :profile_id, "Profile ID:", class: 'label' %>
+          <%= form.text_field :profile_id, class: 'input' %>
+          <%= form.submit "Find profile", class: 'button' %>
+        </div>
+      <% end %>
 
-<% if flash[:errors] %>
-  <%= flash[:errors] %>
-<% end %>
+      <% if flash[:errors] %>
+        <p class='has-text-danger'><%= flash[:errors] %></p>
+      <% end %>
 
-<% if flash[:alert] %>
-  <%= flash[:alert] %>
-<% end %>
-<br>
-<br>
-<% if @list.present? %>
-    <% @list.each do |photo| %>
-        <%= image_tag "https://live.staticflickr.com/#{photo["server"]}/#{photo["id"]}_#{photo["secret"]}_m.jpg" %> <br>
-    <% end %>
-<% end %>
+      <% if flash[:alert] %>
+        <p class='has-text-info'><%= flash[:alert] %></p>
+      <% end %>
+    </div>
+
+    <br>
+    <br>
+      
+    <div class='container'>
+      <div class='photo-grid'>
+        <% if @list.present? %>
+          <% @list.each do |photo| %>
+            <%= image_tag "https://live.staticflickr.com/#{photo["server"]}/#{photo["id"]}_#{photo["secret"]}_m.jpg" %> <br>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+   </div>
+   <div class='column is-one-fifth'></div>
+</div>
