@@ -8,6 +8,9 @@
   <%= flash[:errors] %>
 <% end %>
 
+<% if flash[:alert] %>
+  <%= flash[:alert] %>
+<% end %>
 <br>
 <br>
 <% if @list.present? %>

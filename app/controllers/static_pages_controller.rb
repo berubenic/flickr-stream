@@ -11,6 +11,8 @@ class StaticPagesController < ApplicationController
                 flash.now[:errors] = error.msg        
             end
             @list = response.as_json
+        elsif params[:profile_id].blank?
+            flash.now[:alert] = "Please enter a profile ID"
         end
     end
 end
