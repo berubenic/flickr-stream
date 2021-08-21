@@ -8,7 +8,7 @@ A simple photo widget that allows you to display photos from your Flickr feed (o
 
 
 ## Demo
-
+![Flickr Demo](flickr-stream.gif)
 ## Features
 
 <ul>
