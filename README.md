@@ -4,11 +4,18 @@ A simple photo widget that allows you to display photos from your Flickr feed (o
 
 [Link to lesson](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/using-an-api)
 
-[View in browser](https://shielded-headland-52870.herokuapp.com/)
+[View in browser](https://shielded-headland-52870.herokuapp.com/) (takes 30 seconds to load) Use my flickr profile ID: 193572734@N07
+
+
 ## Demo
 
 ## Features
 
+<ul>
+   <li>Fetch user photos by interacting with Flickr's API</li>
+   <li>Any errors encountered by a user are displayed using ActionDispatch's Flash class</li>
+</ul>
+   
 ## Installation
 
 Prerequisites: Rails, Git, and Bundler
