@@ -4,7 +4,8 @@ A simple photo widget that allows you to display photos from your Flickr feed (o
 
 [Link to lesson](https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby-on-rails/lessons/using-an-api)
 
-[View in browser](https://shielded-headland-52870.herokuapp.com/) (takes 30 seconds to load) Use my flickr profile ID: 193572734@N07
+[View in browser](https://shielded-headland-52870.herokuapp.com/) (takes 30 seconds to load) <br>
+Use my flickr profile ID: 193572734@N07
 
 
 ## Demo
@@ -19,13 +20,12 @@ A simple photo widget that allows you to display photos from your Flickr feed (o
 ## Installation
 
 Prerequisites: Rails, Git, and Bundler
-
-   1. Clone this repo (Instructions)
-   2. Navigate into this project's directory cd flickr-stream
-   3. Install the required gems, by running bundle install
-   4. Migrate the database, by running rails db:migrate
-   5. Seed the database, by running rails db:seed
-   6. Start the local server, by running rails server
-   7. Open a browser and type http://localhost:3000
+1. Clone this repo ([Instructions](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository))
+2. Navigate into this project's directory ```cd flickr-stream```
+3. Install the required gems, by running ```bundle install```
+4. Migrate the database, by running ```rails db:migrate```
+5. Seed the database, by running ```rails db:seed```
+6. Start the local server, by running ```rails server```
+7. Open a browser and type ```http://localhost:3000```
 
 
